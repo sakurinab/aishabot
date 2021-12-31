@@ -1,0 +1,41 @@
+{
+  "name": "syndicate",
+  "version": "1.0.0",
+  "author": "usth",
+  "main": "dist/index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --fix --ext .ts",
+    "start": "rimraf dist && tsc && node .",
+    "build": "rimraf dist && tsc"
+  },
+  "_moduleAliases": {
+    "@struct": "dist/struct",
+    "@models": "dist/models",
+    "@modules": "dist/modules"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "chalk": "^4.1.1",
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.3",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3",
+    "mysql2": "^2.2.5",
+    "rimraf": "^3.0.2",
+    "sequelize": "^6.6.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/cron": "^1.7.2",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^15.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "typescript": "^4.5.4"
+  }
+}
